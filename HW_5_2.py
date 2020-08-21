@@ -9,14 +9,16 @@ for zero in range (my_len):
     else: break
 ##############################################
 #Задача_7
-my_str = str('abcdn')
-len_1 = len(my_str)
-if len_1%2 == 1: my_str += '_'
-len_1= len(my_str)
-my_list = list(my_str)
+my_str = 'abcdn'
+i = int(0)
+len = len(my_str)
 my_result = []
-for a in range (0, len_1-1, 2):
-    my_result.append(my_list[a]+ my_list[a+1])
+if len%2:
+    my_str += '_'
+my_list = list(my_str)
+for value in my_list[::2]:
+    my_result.append(my_list[i]+ my_list[i+1])
+    i += 2
 print(my_result)
 
 ##############################################
