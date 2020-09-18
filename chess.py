@@ -47,8 +47,7 @@ class Queen(Piece):
 
 class Desk(object):
     def __init__(self):
-        """ конструктор класса доски
-            формирует пустые клетки 8х8 """
+ #конструктор класса доски формирует пустые клетки 8х8
         self.cells = {item: ['    '] * 8 for item in letters}
 
     def __str__(self):
